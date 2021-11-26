@@ -1,0 +1,147 @@
+@media (max-width: 400px) {
+  /*SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  /*NAV*/
+  .nav {
+    position: static;
+    margin-top: 3rem;
+  }
+
+  .nav__container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .nav__list__item {
+    display: block;
+  }
+
+  .nav__list {
+    display: block;
+  }
+
+  /*HERO*/
+  .hero {
+    height: 80vh;
+    width: 100%;
+    margin-top: 5rem;
+  }
+
+  .main__hero .hero__containerInner {
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, 0%);
+  }
+
+  .hero__containerInner__button {
+    margin: 1.2rem 1.2rem 0 0;
+    line-height: 1.2;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+  }
+
+  .contact {
+    display: block;
+    padding-top: 1.2rem;
+    margin-bottom: 10rem;
+  }
+
+  .contact__tel {
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+
+  /*FEATURES*/
+  .features__grid {
+    display: grid;
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6";
+    row-gap: 5rem;
+    column-gap: 2.4rem;
+  }
+
+  .card5,
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card6 {
+    font-size: 1.4rem;
+  }
+
+  .method {
+    text-align: center;
+  }
+
+  .method__image {
+    display: none;
+  }
+
+  /*PACKAGES*/
+  .packages {
+    display: grid;
+    grid-template-areas:
+      "package2"
+      "package1"
+      "package3"
+      "text ";
+  }
+
+  .packages__pack1 img,
+  .packages__pack2 img,
+  .packages__pack3 img {
+    width: 50%;
+  }
+
+  .features__container__text {
+    font-size: 2rem;
+    line-height: 1.8;
+  }
+  /*METHOD*/
+  .method__innerContainer {
+    flex-direction: column;
+  }
+
+  /*SKILL*/
+  .skill__innerContainer__text {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .skill__innerContainer__image {
+    display: none;
+  }
+  /*CONTACT*/
+  .contacts {
+    grid-template-columns: 1fr;
+  }
+
+  .contacts__image {
+    height: 32rem;
+    grid-row: 1;
+  }
+
+  .contacts__innerContainer__grid {
+    grid-template-columns: 1fr;
+  }
+}
