@@ -97,12 +97,10 @@ header {
   font-size: 1.8rem;
 }
 
-.nav__list__item:hover,
-.nav__list__itemn:active {
+.nav__list__item--active {
   background-color: #228be6;
   color: white;
   border-radius: 5px;
-  text-transform: uppercase;
 }
 
 .nav__image {
@@ -338,7 +336,7 @@ FONT SIZE SYSTEM (px)
   align-items: center;
   row-gap: 3rem;
   justify-content: space-between;
-  margin-bottom: 8.6rem;
+  margin-bottom: 25rem;
 }
 
 .packages__pack1 {
@@ -450,7 +448,7 @@ FONT SIZE SYSTEM (px)
   gap: 15rem;
   align-items: flex-start;
   max-width: 90%;
-  margin: 3.2rem auto;
+  margin: 0 auto;
   text-align: center;
 }
 
