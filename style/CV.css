@@ -1,0 +1,48 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+h1 {
+  color: #228be6;
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-top: 7.4rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.15rem;
+}
+
+i {
+  font-size: 4.8rem;
+  color: #228be6;
+}
+
+/* MAIN */
+.main__container {
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 0 auto;
+  align-items: center;
+}

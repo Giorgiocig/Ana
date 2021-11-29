@@ -38,7 +38,7 @@ li {
 
 h1 {
   color: white;
-  font-size: 4.4rem;
+  font-size: 5.2rem;
   font-weight: 700;
   line-height: 1.4;
   margin-bottom: 2rem;
@@ -60,6 +60,24 @@ h4 {
   letter-spacing: 0.15rem;
   font-size: 2.4rem;
   padding: 1.4rem;
+}
+
+#margin__feature,
+#margin__packages {
+  height: 3.6vh;
+}
+
+i {
+  color: #228be6;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.section {
+  transition: transform 1s, opacity 1s;
 }
 
 /* Header */
@@ -90,7 +108,7 @@ header {
 }
 
 .nav__list__item {
-  padding: 1.2rem 1.8rem;
+  padding: 1.2rem 2rem;
   display: inline-block;
   font-size: 1.4rem;
   border-radius: 5px;
@@ -98,15 +116,18 @@ header {
 }
 
 .nav__list__item--active {
-  background-color: #228be6;
-  color: white;
-  border-radius: 5px;
+  text-decoration: underline;
+  color: #228be6;
+  text-transform: uppercase;
 }
 
 .nav__image {
   height: 5rem;
 }
 
+.nav.none {
+  display: none;
+}
 /* */
 
 .hero {
@@ -133,17 +154,17 @@ header {
 }
 
 .hero__containerInner {
-  width: 50%;
+  max-width: 50%;
 }
 
 .hero__containerInner__button {
   color: black;
-  padding: 1.6rem;
+  padding: 2.4rem;
   background-color: white;
   display: inline-block;
   margin: 1.2rem 1.2rem 0 0;
   line-height: 1.2;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   border-radius: 0.5rem;
 }
 
@@ -174,11 +195,11 @@ h2 {
 }
 
 .contact {
-  width: 90%;
-  height: 10vh;
+  max-width: 90%;
+  height: 12vh;
   display: flex;
   gap: 4rem;
-  margin: 0 auto 8rem;
+  margin: 0 auto;
 }
 
 .contact__tel,
@@ -197,6 +218,7 @@ SPACING SYSTEM (px)
 FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
+
 .features__grid {
   display: grid;
   grid-template-areas:
@@ -221,7 +243,6 @@ FONT SIZE SYSTEM (px)
 .features__grid__icon {
   font-size: 4.8rem;
   margin-bottom: 2.4rem;
-  color: #228be6;
 }
 
 .card1 {
@@ -278,7 +299,7 @@ FONT SIZE SYSTEM (px)
   background-color: #e9ecef;
   display: flex;
   align-items: center;
-  margin-bottom: 16rem;
+
   padding: 3.2rem;
 }
 
@@ -304,7 +325,7 @@ FONT SIZE SYSTEM (px)
 
 .method__innerContainer__listItem--modified {
   margin-right: 0.8rem;
-  color: #228be6;
+
   font-size: 2.4rem;
 }
 
@@ -325,6 +346,7 @@ SPACING SYSTEM (px)
 FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
+
 .packages {
   display: grid;
   grid-template-areas:
@@ -424,6 +446,13 @@ FONT SIZE SYSTEM (px)
   font-weight: 500;
 }
 
+.packages__pack1__text p:first-of-type,
+.packages__pack2__text p:first-of-type,
+.packages__pack3__text p:first-of-type {
+  color: #228be6;
+  text-decoration: underline;
+}
+
 .packages__pack1__text,
 .packages__pack2__text,
 .packages__pack3__text {
@@ -464,7 +493,7 @@ FONT SIZE SYSTEM (px)
 }
 
 .skill__innerContainer__image {
-  width: 50%;
+  max-width: 50%;
 }
 
 .skills {
@@ -592,6 +621,10 @@ FONT SIZE SYSTEM (px)
   width: 100%;
   padding: 1.2rem;
   font-size: 1.8rem;
+}
+
+.input--modified {
+  border: 4rem solid #228be6;
 }
 
 /* Footer */
