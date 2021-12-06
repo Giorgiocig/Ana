@@ -14,6 +14,7 @@
       crossorigin="anonymous"
     />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <script defer src="/personalProject/Ana/JS/script.js"></script>
   </head>
   <body>
     <header>
@@ -25,9 +26,9 @@
         
           <div>
             <ul class="nav__list">
-              <li class="nav__list__item"><a href="#">Chi sono</a>
-              <li class="nav__list__item"><a href="#">Pacchetti</a></li>
-              <li class="nav__list__item"><a href="#">Contatti</a></li></li>
+              <li class="nav__list__item"><a href="#margin__feature" class="nav__list__link">Chi sono</a></li>
+              <li class="nav__list__item"><a href="#margin__packages" class="nav__list__link">Pacchetti</a></li>
+              <li class="nav__list__item"><a href="#section--6" class="nav__list__link">Contatti</a></li>
             </ul>
           </div>
         </div>
@@ -42,14 +43,14 @@
             MIGLIORA LA TUA PRONUNCIA, MIGLIORA IL VOCABOLARIO, DIVENTA FRENCH
             FLUENT
           </h1>
-          <a href="#" class="hero__containerInner__button">CONTATTAMI</a>
-          <a href="#" class="hero__containerInner__button">SCOPRI DI PIU</a>
+          <a href="#section--6" class="hero__containerInner__button">CONTATTAMI</a>
+          <a href="#margin__feature" class="hero__containerInner__button">SCOPRI DI PIU</a>
         </div>
       </div>
     </main>
 
     <!--main n2-->
-    <section class="contact">
+    <section class="contact section" id="section--1">
         <div class="contact__tel">
           <i class="fas fa-mobile-alt"></i>
           <p>Phone +33 05566545</p>
@@ -61,7 +62,8 @@
     </section>
 
     <!--FEATURES-->
-    <section class="features">
+    <div id="margin__feature"></div>
+    <section class="features section"  id="section--2">
       <div class="features__container">
         <h2>ANA JANJUSEVIC</h2>
         <p class="features__container__text">
@@ -72,32 +74,32 @@
         </p>
       </div>
       <div class="features__grid">
-        <div class="card1">
+        <div class="card card1">
           <i class="fas fa-bullseye features__grid__icon"></i>
           <p>Punta dritto all'obiettivo</p>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         </div>
-        <div class="card2">
+        <div class="card card2">
           <i class="fas fa-meteor features__grid__icon"></i>
           <p>Metodo di aprpendimento rapido</p>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         </div>
-        <div class="card3">
+        <div class="card card3">
           <i class="fas fa-hands-helping features__grid__icon"></i>
           <p>Supporto h24</p>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         </div>
-        <div class="card4">
+        <div class="card card4">
           <i class="far fa-comments features__grid__icon"></i>
           <p>Conversazioni per situazioni reali</p>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         </div>
-        <div class="card5">
+        <div class="card card5">
           <i class="fas fa-book features__grid__icon"></i>
           <p>Aumenta il tuo vocabolario</p>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         </div>
-        <div class="card6">
+        <div class="card card6">
           <i class="fas fa-headset features__grid__icon"></i>
           <p>disponibile anche online</p>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
@@ -106,7 +108,7 @@
     </section>
 
     <!--Method-->
-    <section class="method">
+    <section class="method section" id="section--3">
       <div class="method__innerContainer">
         <div>
           <h2>METODO PER SEGUIRE LO STUDENTE PETIT A PETIT</h2>
@@ -131,9 +133,8 @@
     </section>
 
     <!--Packages-->
-
-    <section class="packages">
-    
+    <div id="margin__packages"></div>
+    <section class="packages section" id="section--4">
       <div class="packages__pack1 package__pack--mod">
         <img src="/personalProject/Ana/image/compressed card 4.jpg" alt="" />
         <div class="packages__pack1__text">
@@ -183,7 +184,7 @@
     </section>
 
     <!--SKILL-->
-    <section class="skills">
+    <section class="skills section" id="section--5">
       <div class="skill__innerContainer">
         <div class="skill__innerContainer__text">
           <h3>SKILL VOCABOLARIO</h3>
@@ -203,16 +204,17 @@
           <p class="skill__innerContainer__text__p skill__innerContainer__text__p--modified "> 50€</p>
           <a href="#" class="skill__innerContainer__text__btn">Acquista</a>
         </div>
-        <img
-          src="/personalProject/Ana/image/brett-jordan-POMpXtcVYHo-unsplash compressed2.jpg"
-          alt=""
-          class="skill__innerContainer__image"
-        />
+        <div class="skill__innerContainer__image">
+          <img
+            src="/personalProject/Ana/image/brett-jordan-POMpXtcVYHo-unsplash compressed2.jpg"
+            alt=""
+          />
+        </div>
       </div>
     </section>
 
     <!--Form-->
-    <section>
+    <section id="section--6" class="section">
       <div class="contacts">
         <div class="contacts__innerContainer">
           <h3>Hai domande? Scrivimi</h3>
@@ -227,14 +229,14 @@
               <input type="text" id="mex" placeholder="Messaggio">
             </div>
             <div class="contacts__innerContainer__grid__menu">
-              <label for="">cosa ti piacerebbe imparare?</label>
+              <label for="">Quale pacchetto hai scelto?</label>
               <select type="" name="argomenti" id="argomenti">
             </div>
             <div>
               <option value="--Scegli un'opzione--">--Scegli un'opzione--</option>
-              <option value="grammatica">Grammatica</option>
-              <option value="Vocabolario">Vocabolario</option>
-              <option value="Conversazione">Conversazione</option>
+              <option value="grammatica">5 lezioni-Les Enfants</option>
+              <option value="Vocabolario">10 lezioni- Les Jeunes</option>
+              <option value="Conversazione">20 lezioni- Les Adults</option>
             </select>
           </div>
             <div class="contacts__innerContainer__grid__div"><input type="submit" name="Invia messaggio" class="contacts__innerContainer__grid__submit"></div>
@@ -268,8 +270,7 @@
             <p>InsegnAna@gmail.com</p>
           </div>
         </div>
-       
-    
     </footer>
+    
   </body>
 </html>
